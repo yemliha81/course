@@ -57,8 +57,8 @@
         <div class="login">
             <div class="welcome-div">
                 <form action="<?php echo LOGIN_POST;?>" method="post">
-                    <div>
-                        <img src="<?php echo FATHER_BASE;?>template/img/koku-life-pdf.svg" width="240px"/>
+                    <div style="text-align:center;">
+                        <img src="<?php echo FATHER_BASE;?>../template/assets/img/logo.png" width="120px"/>
                     </div>
                     <div class="welcome-msg">
                         <div>

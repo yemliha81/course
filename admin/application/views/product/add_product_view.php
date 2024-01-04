@@ -74,7 +74,6 @@
 								<div class="m-b-20 form-bottom">
 									<button type="submit" class="btn_custom"><span class="lnr lnr-upload"></span>Kaydet</button>
 								</div>
-								<input type="hidden" name="category_id" value="<?php echo $c_id;?>"/>
 							</form>
 						</div>
         </div>

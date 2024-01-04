@@ -154,3 +154,7 @@ define( 'UPDATE_BANNER', FATHER_BASE.'banner/update_banner/' );
 define( 'UPDATE_BANNER_POST', FATHER_BASE.'banner/update_banner_post/' );
 define( 'DELETE_BANNER', FATHER_BASE.'banner/delete_banner/' );
 define( 'HIDE_BANNER', FATHER_BASE.'banner/hide_banner/' );
+
+define( 'COURSE_LIST', FATHER_BASE.'course/course_list/' );
+define( 'COURSE_DETAIL', FATHER_BASE.'course/course_detail/' );
+define( 'UPDATE_COURSE_POST', FATHER_BASE.'course/update_course_post/' );

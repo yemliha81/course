@@ -1,133 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Kokulife Oda Kokuları</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $_ENV['BASE_URL'];?>assets/images/kokulife-favicon.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/animate.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/slick.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/chosen.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/lightbox.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/js/fancybox/source/jquery.fancybox.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/jquery.scrollbar.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/mobile-menu.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/fonts/flaticon/flaticon.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/style.css?v=1.8.1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><?php echo $_ENV['PROJECT_NAME'];?></title>
+    <link
+      rel="icon"
+      href="<?php echo FATHER_BASE;?>template/assets/img/favicon.png"
+      sizes="20x20"
+      type="image/png"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="<?php echo FATHER_BASE;?>template/assets/css/vendor.css" />
+    <link rel="stylesheet" href="<?php echo FATHER_BASE;?>template/assets/css/style.css" />
+    <link rel="stylesheet" href="<?php echo FATHER_BASE;?>template/assets/css/responsive.css" />
     <style>
-        .src i{
-            font-size:20px;
-        }
+      .success_div{
+        position: fixed;
+        width: 300px;
+        z-index: 111;
+        top: 15px;
+        right: 15px;
+        text-align: center;
+        padding: 15px;
+        background: #318c31;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-radius: 10px;
+      }
     </style>
-</head>
-<body class="home">
-<header class="header style7">
-    <div class="container">
-        <div class="main-header">
-            <div class="row">
-                <div class="col-lg-2 col-sm-2 col-md-3 col-xs-7 col-ts-12 header-element">
-                    <div class="logo">
-                        
-                    </div>
-                </div>
-                <div class="col-lg-8 col-sm-8 col-md-6 col-xs-5 col-ts-12" style="text-align:center;">
-                    <a href="<?php echo $_ENV['BASE_URL'];?>">
-                        <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-logo.svg" alt="img" width="280">
-                    </a>
-                </div>
-                <div class="col-lg-2 col-sm-2 col-md-3 col-xs-12 col-ts-12">
-                    <div class="header-control">
-                        <a class="menu-bar mobile-navigation menu-toggle" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+  </head>
+  <body>
+    <?php if( $_SESSION['form_post']  == "success"){ ?>
+    <div class="success_div"><?php echo $_SESSION['form_message'];?></div>
+    <?php unset($_SESSION["form_post"]); unset($_SESSION["form_message"]); } ?>
+    <!-- preloader area start 
+    <div class="preloader" id="preloader">
+      <div class="preloader-inner">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
         </div>
+      </div>
     </div>
-    <div class="header-nav-container">
+    preloader area end -->
+
+    <!-- search popup start-->
+    <div class="td-search-popup" id="td-search-popup">
+      <form action="index.html" class="search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Ara..." />
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <!-- search popup end-->
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <!-- navbar start -->
+    <div class="navbar-area">
+      <!-- navbar top start -->
+      <div class="navbar-top">
         <div class="container">
-            <div class="header-nav-wapper main-menu-wapper">
-                <div class="header-nav">
-                    <div class="container-wapper" style="display: flex;align-items: center;justify-content: flex-end;">
-                        <ul class="stelina-clone-mobile-menu stelina-nav main-menu " id="menu-main-menu">
-                            <li class="menu-item">
-                                <a href="<?php echo $_ENV['BASE_URL'];?>" class="stelina-menu-item-title" title="Home">Anasayfa</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="<?php echo CATEGORY_LIST;?>" class="stelina-menu-item-title" title="Shop">Kategoriler</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="<?php echo PRODUCT_LIST;?>" class="stelina-menu-item-title" title="Shop">Ürünler</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="<?php echo PAGE_DETAIL.'kullanici-yorumlari';?>" class="stelina-menu-item-title" title="About">KULLANICI YORUMLARI</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="<?php echo PAGE_DETAIL.'hakkimizda';?>" class="stelina-menu-item-title" title="About">Hakkımızda</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="<?php echo PAGE_DETAIL.'iletisim';?>" class="stelina-menu-item-title" title="About">İLETİŞİM</a>
-                            </li>
-                            
-                            <li class="menu-item">
-                                <a target="_blank" href="https://wa.me/+905425441711" class="stelina-menu-item-title" title="About">
-                                    <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/whatsapp.svg" width="30px">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-md-8 text-md-left text-center">
+              <ul>
+                <li>
+                  <p>
+                    <i class="fa fa-map-marker"></i> Kuştepe, İnönü Cd. NO:22,
+                    34000 Şişli/İstanbul
+                  </p>
+                </li>
+                <li>
+                  <p><i class="fa fa-envelope-o"></i> bilgi@dileregitim.com</p>
+                </li>
+              </ul>
             </div>
+            <div class="col-md-4">
+              <ul class="topbar-right text-md-right text-center">
+                <li class="social-area">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-pinterest" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+      <nav class="navbar navbar-area-1 navbar-area navbar-expand-lg bg-white">
+        <div class="container nav-container">
+          <div class="responsive-mobile-menu">
+            <button
+              class="menu toggle-btn d-block d-lg-none"
+              data-target="#edumint_main_menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-left"></span>
+              <span class="icon-right"></span>
+            </button>
+          </div>
+          <div class="logo">
+            <a href="<?php echo FATHER_BASE;?>"><img src="<?php echo FATHER_BASE;?>template/assets/img/logo.png" alt="img" /></a>
+          </div>
+          <div class="collapse navbar-collapse" id="edumint_main_menu">
+            <ul class="navbar-nav menu-open">
+              <li class="menu-item-has-children current-menu-item">
+                <a href="<?php echo FATHER_BASE;?>">Anasayfa</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="<?php echo FATHER_BASE;?>kurslar">Kurslar</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="about.html">Hakkımızda</a>
+              </li>
+              <li><a href="contact.html">İletişim</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-</header>
-<div class="header-device-mobile">
-    <div class="wapper">
-        <div class="item mobile-logo">
-            <div class="logo">
-                <a href="<?php echo $_ENV['BASE_URL'];?>">
-                    <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-logo.svg" alt="img" width="240">
-                </a>
-            </div>
-        </div>
-        <!--<div class="item item mobile-search-box has-sub">
-            <a href="#">
-						<span class="icon">
-							<i class="fa fa-search" aria-hidden="true"></i>
-						</span>
-            </a>
-            <div class="block-sub">
-                <a href="#" class="close">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </a>
-                <div class="header-searchform-box">
-                    <form class="header-searchform">
-                        <div class="searchform-wrap">
-                            <input type="text" class="search-input" placeholder="Enter keywords to search...">
-                            <input type="submit" class="submit button" value="Search">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>-->
-        <div class="item menu-bar">
-            <a class=" mobile-navigation  menu-toggle" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-    </div>
-</div>
+    <!-- navbar end -->

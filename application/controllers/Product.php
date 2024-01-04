@@ -44,6 +44,29 @@ class Product extends CI_Controller {
     	$this->load->view('product_list_view', $data);
 
 	}
+
+	public function product_form_post()
+	{
+		
+		$post = $this->input->post();
+
+		$ins["full_name"] = $post["name"];
+		$ins["email"] = $post["email"];
+		$ins["phone"] = $post["phone"];
+		$ins["call_time"] = $post["time"];
+		$ins["product_id"] = $post["course_id"];
+
+		$this->db->insert('course_request_table', $ins);
+
+		if($this->db->affected_rows() > 0){
+			$_SESSION['form_post'] = 'success';
+			$_SESSION['form_message'] = 'Form başarıyla kaydedildi!';
+			redirect(FATHER_BASE);
+		}
+
+		die("Kayıt esnasında hata oluştu!");
+
+	}
 	
 	public function search(){
 	    $post = $this->input->post();

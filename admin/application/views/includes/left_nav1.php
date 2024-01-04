@@ -5,5 +5,6 @@
     <!--<a class="left-a <?php if($menu=='21'){echo 'active';}?>" href="<?php echo ADD_RESTAURANT;?>"><span class="xflex"><i class="fa fa-user-plus"></i> New Restaurant </span> <?php if($menu=='21'){echo '<i class="fa fa-chevron-right"></i>';}?></a>-->
     <a class="left-a <?php if($menu=='4'){echo 'active';}?>" href="<?php echo PAGE_LIST;?>"><span class="xflex"><span class="lnr lnr-book"></span> Sayfalar</span> <?php if($menu=='4'){echo '<i class="fa fa-chevron-right"></i>';}?></a>
     <a class="left-a <?php if($menu=='5'){echo 'active';}?>" href="<?php echo SOCIAL_MEDIA_LIST;?>"><span class="xflex"><span class="lnr lnr-link"></span> Sosyal Medya</span> <?php if($menu=='5'){echo '<i class="fa fa-chevron-right"></i>';}?></a>
-    <a class="left-a <?php if($menu=='6'){echo 'active';}?>" href="<?php echo BANNER_LIST;?>"><span class="xflex"><span class="lnr lnr-picture"></span> Slaytlar</span> <?php if($menu=='5'){echo '<i class="fa fa-chevron-right"></i>';}?></a>
+    <a class="left-a <?php if($menu=='6'){echo 'active';}?>" href="<?php echo BANNER_LIST;?>"><span class="xflex"><span class="lnr lnr-picture"></span> Slaytlar</span> <?php if($menu=='6'){echo '<i class="fa fa-chevron-right"></i>';}?></a>
+    <a class="left-a <?php if($menu=='7'){echo 'active';}?>" href="<?php echo COURSE_LIST;?>"><span class="xflex"><span class="lnr lnr-license"></span> Kurs Kayıtları</span> <?php if($menu=='6'){echo '<i class="fa fa-chevron-right"></i>';}?></a>
 </div>

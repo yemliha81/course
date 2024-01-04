@@ -125,5 +125,6 @@ define( 'SUPPORT_PAGE', $_ENV['BASE_URL'].'page/support/');
 
 
 define( 'PRODUCT_LIST', $_ENV['BASE_URL'].'product/product_list/');
+define( 'PRODUCT_FORM_POST', $_ENV['BASE_URL'].'product/product_form_post/');
 define( 'CATEGORY_LIST', $_ENV['BASE_URL'].'category/category_list/');
 define( 'PAGE_DETAIL', $_ENV['BASE_URL'].'kurumsal/');

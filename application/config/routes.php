@@ -58,6 +58,7 @@ $route['kurumsal/(:any)'] = 'page/index/$1';
 $route['kategoriler'] = 'category/category_list/';
 $route['urun-detay/(:any)'] = 'product/detail/$1';
 $route['kategori-detay/(:any)'] = 'category/detail/$1';
+$route['kurslar'] = 'product/product_list/';
 
 
 
