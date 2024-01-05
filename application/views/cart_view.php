@@ -56,7 +56,7 @@
             	<?php } ?>
             </div>
         <div class='minicart-drop-actions'>
-            <a class='btn btn--md btn--grey' href='<?php echo FATHER_BASE;?>'><?php echo $this->mdl_common->get_lang()['continue_shopping'];?></a> 
+            <a class='btn btn--md btn--grey' href='<?php echo BASE_URL;?>'><?php echo $this->mdl_common->get_lang()['continue_shopping'];?></a> 
             <a class='btn btn--md' href='<?php echo CHECKOUT;?>'><?php echo $this->mdl_common->get_lang()['go_to_checkout'];?></a>
         </div>
         

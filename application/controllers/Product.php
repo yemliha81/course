@@ -61,7 +61,7 @@ class Product extends CI_Controller {
 		if($this->db->affected_rows() > 0){
 			$_SESSION['form_post'] = 'success';
 			$_SESSION['form_message'] = 'Form başarıyla kaydedildi!';
-			redirect(FATHER_BASE);
+			redirect(BASE_URL);
 		}
 
 		die("Kayıt esnasında hata oluştu!");

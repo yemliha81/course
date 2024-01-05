@@ -50,7 +50,7 @@
                 <li class="col-md-4">
                   <div class="single-intro-inner style-white text-center">
                     <div class="thumb">
-                      <img src="<?php echo FATHER_BASE;?>template/assets/img/intro/1.png" alt="img" />
+                      <img src="<?php echo BASE_URL;?>template/assets/img/intro/1.png" alt="img" />
                     </div>
                     <div class="details">
                       <h5>Lisansüstü</h5>

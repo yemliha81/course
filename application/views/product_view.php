@@ -6,7 +6,7 @@
                 <div class="section-title mb-0 text-center">
                     <h2 class="page-title"><?php echo $product['product_name_en'];?></h2>
                     <ul class="page-list">
-                        <li><a href="<?php echo FATHER_BASE;?>">Anasayfa</a></li>
+                        <li><a href="<?php echo BASE_URL;?>">Anasayfa</a></li>
                         <li><?php echo $product['product_name_en'];?></li>
                     </ul>
                 </div>
@@ -25,7 +25,7 @@
                             <h3 class="title"><a href="course-details.html"><?php echo $product['product_name_en'];?></a></h3>
                         </div>
                         <div class="thumb">
-                            <img src="<?php echo FATHER_BASE;?>admin/files/product/img/1000/<?php echo $product['product_image'];?>" alt="img">
+                            <img src="<?php echo BASE_URL;?>admin/files/product/img/1000/<?php echo $product['product_image'];?>" alt="img">
                         </div>
                         <div class="course-details-nav-tab text-center">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">

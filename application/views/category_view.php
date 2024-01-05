@@ -301,7 +301,7 @@ let page = 1;
         $('.loader_icon').show();
         $.ajax({
            type : 'get',
-           url : '<?echo FATHER_BASE;?>category/products_ajax/<?echo $cat['id'];?>?page='+(page+1),
+           url : '<?echo BASE_URL;?>category/products_ajax/<?echo $cat['id'];?>?page='+(page+1),
            success : function(response){
                setTimeout(function(){
                    $('.prd-zone').append(response);
@@ -319,7 +319,7 @@ let page = 1;
         $.ajax({
             type : 'post',
             data : dataForm,
-            url : '<?echo FATHER_BASE;?>category/filter_products',
+            url : '<?echo BASE_URL;?>category/filter_products',
             success : function(response){
                 setTimeout(function(){
                    $('.prd-zone').html(response);

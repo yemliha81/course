@@ -34,7 +34,7 @@
 						</div>
 						<div class="clearfix">
 							<input id="checkbox1" name="checkbox1" type="checkbox" required style='display:unset;' >
-							<a href='<?php echo FATHER_BASE;?>page/index/10'><?php echo $this->mdl_common->get_lang()['terms'];?></a>
+							<a href='<?php echo BASE_URL;?>page/index/10'><?php echo $this->mdl_common->get_lang()['terms'];?></a>
 							</div>
 						<div class="text-center">
 						    <!--<div id='html_element' data-callback="recaptcha_callback"></div>-->
