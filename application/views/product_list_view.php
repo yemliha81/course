@@ -30,7 +30,7 @@
                         <div class="col-md-6">
                             <div class="single-course-inner">
                                 <div class="thumb">
-                                    <img src="<?php echo FATHER_BASE;?>admin/files/product/img/400/<?php echo $product['product_image'];?>" alt="img">
+                                    <img src="<?php echo BASE_URL;?>admin/files/product/img/400/<?php echo $product['product_image'];?>" alt="img">
                                 </div>
                                 <div class="details">
                                     <div class="details-inner">
