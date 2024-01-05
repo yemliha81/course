@@ -76,7 +76,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 align-self-center">
               <a href="index.html"
-                ><img src="<?php echo FATHER_BASE;?>template/assets/img/footer-logo.png" alt="img"
+                ><img src="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/img/footer-logo.png" alt="img"
               /></a>
             </div>
             <div
@@ -110,7 +110,7 @@
               class="col-lg-4 order-lg-8 text-lg-center align-self-center mt-lg-0 mt-3"
             >
               <a href=""
-                ><img src="<?php echo FATHER_BASE;?>template/assets/img/dw-logo.svg" height="56px" alt=""
+                ><img src="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/img/dw-logo.svg" height="56px" alt=""
               /></a>
             </div>
           </div>
@@ -126,8 +126,8 @@
     <!-- back to top area end -->
 
     <!-- all plugins here -->
-    <script src="<?php echo FATHER_BASE;?>template/assets/js/vendor.js"></script>
+    <script src="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/js/vendor.js"></script>
     <!-- main js  -->
-    <script src="<?php echo FATHER_BASE;?>template/assets/js/main.js"></script>
+    <script src="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/js/main.js"></script>
   </body>
 </html>
