@@ -8,15 +8,15 @@
     <title><?php echo $_ENV['PROJECT_NAME'];?></title>
     <link
       rel="icon"
-      href="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/img/favicon.png"
+      href="<?php echo $_ENV['BASE_URL'];?>template/assets/img/favicon.png"
       sizes="20x20"
       type="image/png"
     />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/css/vendor.css" />
-    <link rel="stylesheet" href="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/css/style.css" />
-    <link rel="stylesheet" href="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/css/responsive.css" />
+    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>template/assets/css/vendor.css" />
+    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>template/assets/css/style.css" />
+    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>template/assets/css/responsive.css" />
     <style>
       .success_div{
         position: fixed;
@@ -116,15 +116,15 @@
             </button>
           </div>
           <div class="logo">
-            <a href="<?php echo $_ENV['PROJECT_NAME'];?>"><img src="<?php echo $_ENV['PROJECT_NAME'];?>template/assets/img/logo.png" alt="img" /></a>
+            <a href="<?php echo $_ENV['BASE_URL'];?>"><img src="<?php echo $_ENV['BASE_URL'];?>template/assets/img/logo.png" alt="img" /></a>
           </div>
           <div class="collapse navbar-collapse" id="edumint_main_menu">
             <ul class="navbar-nav menu-open">
               <li class="menu-item-has-children current-menu-item">
-                <a href="<?php echo $_ENV['PROJECT_NAME'];?>">Anasayfa</a>
+                <a href="<?php echo $_ENV['BASE_URL'];?>">Anasayfa</a>
               </li>
               <li class="menu-item-has-children">
-                <a href="<?php echo $_ENV['PROJECT_NAME'];?>kurslar">Kurslar</a>
+                <a href="<?php echo $_ENV['BASE_URL'];?>kurslar">Kurslar</a>
               </li>
               <li class="menu-item-has-children">
                 <a href="about.html">Hakkımızda</a>
