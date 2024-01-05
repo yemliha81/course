@@ -86,6 +86,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 
 
+define( 'BASE_URL', $_ENV['BASE_URL'] );
 define( 'ASSETS', $_ENV['BASE_URL'].'assets/' );
 define( 'BANNER_PATH', $_ENV['BASE_URL'].'files/banner/img/' );
 define( 'CATEGORY_IMAGE_PATH', $_ENV['BASE_URL'].'files/category/img/' );
