@@ -10,4 +10,8 @@ class Language extends CI_Controller {
         redirect($_SERVER['HTTP_REFERER']);
     }
 
+    public function test(){
+        echo 'test';
+    }
+
 }
