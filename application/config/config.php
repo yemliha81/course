@@ -293,7 +293,7 @@ $config['error_views_path'] = '';
 | application/cache/ directory.  Use a full server path with trailing slash.
 |
 */
-$config['cache_path'] = '';
+$config['cache_path'] = APPPATH . 'cache/';
 
 /*
 |--------------------------------------------------------------------------
@@ -312,6 +312,7 @@ $config['cache_path'] = '';
 |
 */
 $config['cache_query_string'] = FALSE;
+$config['cache_driver'] = 'file';
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +325,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'j5464ı5kn6j54n6jkn45o645o6m';
 
 /*
 |--------------------------------------------------------------------------
