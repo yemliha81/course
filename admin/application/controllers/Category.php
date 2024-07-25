@@ -14,17 +14,23 @@ class Category extends CI_Controller {
     //List categories
 	public function index()
 	{	
+        $data['title'] = 'Kategoriler';
         $data['categories'] = $this->db->select('*')
             ->where('status >=', 0)
             ->get('categories')->result_array();
-        
+
+        $this->load->view('includes/header', $data);
         $this->load->view('category/index', $data);
+        $this->load->view('includes/footer', $data);
 	}
 
     //Create categories
 	public function create()
-	{	
+	{
+        $data['title'] = 'Kategori Ekle';
+        $this->load->view('includes/header', $data);
         $this->load->view('category/create');
+        $this->load->view('includes/footer', $data);
 	}
 
     //Create categories post
